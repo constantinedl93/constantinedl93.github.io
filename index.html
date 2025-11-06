@@ -1,0 +1,219 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Constantine D.N.Lagura — Portfolio</title>
+		<style>
+			:root{
+				--bg:#f7f9fc;
+				--card:#ffffff;
+				--accent:#2563eb;
+				--muted:#6b7280;
+				--radius:10px;
+				--max-width:1000px;
+				font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			}
+			*{box-sizing:border-box}
+			body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+			.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+
+			header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+			.brand{display:flex;flex-direction:column}
+			.brand .name{font-weight:700;font-size:1.25rem}
+			nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+			nav a:hover{color:var(--accent)}
+
+			.hero{display:grid;grid-template-columns:1fr;gap:1rem;background:linear-gradient(180deg, rgba(37,99,235,0.08), transparent);padding:2rem;border-radius:var(--radius);align-items:center}
+			.hero h1{margin:0;font-size:1.75rem}
+			.hero p{margin:0;color:var(--muted)}
+
+			section{margin-top:2rem}
+			.card{background:var(--card);padding:1.25rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(13,17,26,0.06)}
+
+			.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-top:.75rem}
+			.skill{background:#fbfdff;border:1px solid #eef3ff;padding:.6rem .75rem;border-radius:8px;font-weight:600;color:#0f172a;text-align:center}
+
+			@media (min-width:700px){
+				.hero{grid-template-columns:1fr 320px}
+				.skills-grid{grid-template-columns:repeat(4,1fr)}
+			}
+
+			footer{margin-top:2rem;text-align:center;color:var(--muted);font-size:.9rem}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="brand">
+					<div class="name">Constantine D.N.Lagura</div>
+					<div class="tagline" style="color:var(--muted);font-size:.9rem">Blood Donor Specialist • Team Leader • USMC Veteran</div>
+				</div>
+				<nav aria-label="Primary navigation">
+					<a href="#home">Home</a>
+					<a href="#skills">Skills</a>
+					<a href="#about">Experience</a>
+					<a href="#education">Education</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</header>
+
+			<main>
+				<section id="home" class="hero card">
+					<div>
+						<h1>Welcome to my Professional Portfolio</h1>
+						<p class="lead">Blood Donor Specialist with extensive experience in phlebotomy and team leadership. Former U.S. Marine with a strong background in healthcare and retail management.</p>
+						<p style="margin-top:1rem;color:var(--muted)">Browse below to learn more about my professional experience and qualifications.</p>
+								</div>
+				</section>
+
+				<section id="about">
+					<div class="card">
+						<h2>Work Experience</h2>
+						<div style="color:var(--muted)">
+							<div class="experience-item">
+								<h3 style="color:#111;margin:0 0 .5rem">Blood Donor Specialist 2 — Inova Blood Donor Services</h3>
+								<p style="font-size:.9rem;margin:0 0 .5rem">July 2018 - Present</p>
+								<ul style="margin-top:.5rem">
+									<li>Promoted to Team Leader in 2022</li>
+									<li>Advanced to Apheresis Operator in February 2020</li>
+									<li>Received Certificate of Phlebotomy in January 2019</li>
+								</ul>
+							</div>
+
+							<div class="experience-item" style="margin-top:1.5rem">
+								<h3 style="color:#111;margin:0 0 .5rem">United States Marine Corps</h3>
+								<p style="font-size:.9rem;margin:0 0 .5rem">June 2017 - May 2018</p>
+								<ul style="margin-top:.5rem">
+									<li>Trained in Combat Care and First Aid</li>
+									<li>Completed Martial Arts and Weapons Safety Training</li>
+									<li>Maintained High Physical Fitness Standards</li>
+								</ul>
+							</div>
+
+							<div class="experience-item" style="margin-top:1.5rem">
+								<h3 style="color:#111;margin:0 0 .5rem">Head Produce Associate — Walmart Inc</h3>
+								<p style="font-size:.9rem;margin:0 0 .5rem">November 2012 - May 2017</p>
+								<ul style="margin-top:.5rem">
+									<li>Supervised team of ten associates in daily operations</li>
+									<li>Improved training programs leading to increased customer satisfaction</li>
+									<li>Managed inventory systems and supply cataloging</li>
+									<li>Received Employee of the Month recognition for customer service</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="skills">
+					<div class="card">
+						<h2>Skills & Qualifications</h2>
+						<p style="color:var(--muted)">Professional and technical skills:</p>
+
+						<div style="display:flex;gap:1rem;flex-wrap:wrap">
+							<!-- Professional skills column -->
+							<div style="flex:1;min-width:220px">
+								<h3 style="margin-top:0">Professional</h3>
+								<div class="skills-grid" style="grid-template-columns:1fr;gap:.5rem" aria-label="Professional skills">
+									<div class="skill">Phlebotomy</div>
+									<div class="skill">Team Leadership</div>
+									<div class="skill">CPR Certified</div>
+									<div class="skill">Healthcare</div>
+									<div class="skill">Computer Systems</div>
+									<div class="skill">Inventory Management</div>
+									<div class="skill">Staff Training</div>
+									<div class="skill">Combat Care</div>
+									<div class="skill">First Aid</div>
+									<div class="skill">Operations Management</div>
+									<div class="skill">Customer Service</div>
+									<div class="skill">Quality Control</div>
+								</div>
+							</div>
+
+							<!-- Data science skills column -->
+							<div style="flex:1;min-width:220px">
+								<h3 style="margin-top:0">Data Science</h3>
+								<div class="skills-grid" style="grid-template-columns:1fr;gap:.5rem" aria-label="Data science skills">
+									<div class="skill">Python</div>
+									<div class="skill">Pandas / NumPy</div>
+									<div class="skill">SQL</div>
+									<div class="skill">Scikit-Learn</div>
+									<div class="skill">TensorFlow / PyTorch</div>
+									<div class="skill">Statistics</div>
+									<div class="skill">Data Visualization</div>
+									<div class="skill">EDA & Data Cleaning</div>
+									<div class="skill">Feature Engineering</div>
+									<div class="skill">Model Deployment</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Certifications subsection -->
+						<div style="margin-top:1rem">
+							<h3 style="margin:0 0 .5rem">Certifications</h3>
+							<ul style="color:var(--muted);margin:0;padding-left:1.25rem">
+								<li>Certificate of Phlebotomy — January 2019</li>
+								<li>Sanitation and Safety Certificate</li>
+								<li>CPR Certification</li>
+							</ul>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="contact" style="margin-top:1.5rem">
+					<div class="card">
+						<h2>Contact Information</h2>
+						<div style="color:var(--muted)">
+							<p><strong>Address:</strong> 5972 Manorwood Dr., Centreville, VA 20120</p>
+							<p><strong>Phone:</strong> (571) 267-9776</p>
+							<p><strong>Email:</strong> <a href="mailto:ConstantineDL93@Gmail.com" style="color:var(--accent);text-decoration:none">ConstantineDL93@Gmail.com</a></p>
+						</div>
+					</div>
+				</section>
+
+				<section id="education" style="margin-top:1.5rem">
+					<div class="card">
+						<h2>Education</h2>
+						<div style="color:var(--muted)">
+							<div class="education-item">
+								<h3 style="color:#111;margin:0 0 .5rem">Northern Virginia Community College</h3>
+								<p style="font-size:.9rem;margin:0 0 .5rem">August 2012 - 2016</p>
+								<ul style="margin-top:.5rem">
+									<li>Sanitation and Safety Certificate</li>
+									<li>Completed Two Semesters of Culinary Arts</li>
+								</ul>
+							</div>
+
+							<div class="education-item" style="margin-top:1.5rem">
+								<h3 style="color:#111;margin:0 0 .5rem">Military Training</h3>
+								<ul style="margin-top:.5rem">
+									<li>General Service Marine Qualification</li>
+									<li>Combat Care and First Aid Certification</li>
+									<li>Advanced Martial Arts Training</li>
+									<li>Weapons Handling and Safety Certification</li>
+								</ul>
+							</div>
+
+							<div class="education-item" style="margin-top:1.5rem">
+								<h3 style="color:#111;margin:0 0 .5rem">Westfield High School</h3>
+								<p style="font-size:.9rem;margin:0 0 .5rem">September 2008 - June 2012</p>
+								<p>High School Diploma</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				© <span id="year"></span> Constantine D.N.Lagura — Professional Portfolio
+			</footer>
+		</div>
+
+		<script>
+			// Small script to keep the footer year current
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+	</body>
+</html>
